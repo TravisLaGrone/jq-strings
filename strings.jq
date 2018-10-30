@@ -13,3 +13,7 @@ def ltrimstr:
 
 def rtrimstr:
     capture("(?<content>.*)?\\s*$") | .content ;
+
+
+def trimstr:
+    capture("^\\s*(?<content>.*)?\\s*$") | .content ;
