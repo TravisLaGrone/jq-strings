@@ -5,3 +5,7 @@ module {
     "email": "travis.lagrone@trintech.com",
     "company": "Trintech"
 };
+
+
+def ltrimstr:
+    capture("^\\s*(?<content>.*)") | .content ;
