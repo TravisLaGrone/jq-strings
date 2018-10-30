@@ -9,3 +9,7 @@ module {
 
 def ltrimstr:
     capture("^\\s*(?<content>.*)") | .content ;
+
+
+def rtrimstr:
+    capture("(?<content>.*)?\\s*$") | .content ;
