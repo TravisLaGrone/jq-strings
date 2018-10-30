@@ -22,5 +22,9 @@ def trimstr($prefix; $suffix):
   end ;
 
 
+def trimstr($str):
+  ltrimstr($str) | rtrimstr($str) ;
+
+
 def trimstr:
   capture("^\\s*(?<content>.*)?\\s*$") | .content ;
